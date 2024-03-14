@@ -1,0 +1,21 @@
+/* ADJUSTMENTS FOR MOBILE USERS: */
+
+@media screen and (max-width: 600px) {
+	/* adjusts width of about me section */
+	.aboutMeDiv {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/* reduce font size of nav text */
+	.navLink {
+		font-size: 12px;
+	}
+	/* reduced spacing between nav */
+	.navItem {
+		margin: 25px;
+	}
+}
+
+/* references: none */

@@ -1,0 +1,85 @@
+/* ANIMATIONS: */
+
+/* defining the changes that will be made when the keyframe is 
+applied to a selector */
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* fades in the about me section's text */
+.aboutMeText {
+	/* '1s' controls the time it takes to fade in */
+	animation: fadeIn 1s ease-in-out;
+}
+
+/* keyframe for sliding elements in from the left side */
+@keyframes slideFromLeft {
+	0% {
+		transform: translateX(-50%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* keyframe for sliding elements in from the right side */
+@keyframes slideFromRight {
+	0% {
+		transform: translateX(50%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+/* apply the animations to the specific elements with a delay */
+.skillsItem li {
+	animation-duration: 1s;
+	animation-fill-mode: both;
+	animation-play-state: paused;
+}
+
+/* assigning the keyframes to the respective left and right side 
+items of the 'Skill & Competencies' heading */
+.skillsItem .slide-left {
+	animation-name: slideFromLeft;
+}
+.skillsItem .slide-right {
+	animation-name: slideFromRight;
+}
+
+/* removes the slide in from left and right part and instead 
+only changes the opacity */
+@media screen and (max-width: 1500px) {
+	/* modified the keyframes for medium screens */
+	@keyframes slideFromLeft {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+
+	@keyframes slideFromRight {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}
+
+/* references:
+https://www.youtube.com/watch?v=SgmNxE9lWcY 
+*/
