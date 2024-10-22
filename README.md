@@ -38,3 +38,8 @@ To get a local copy up and running follow these steps:
    git clone https://github.com/ChadProbert/chadprobert.github.io.git
    ```
 3. Open the `index.html` file in your preferred browser.
+
+## Setup and Configuration
+
+Please note that these files have been minified and uglified to reduce the file size and improve performance.
+To easily read the code and comments, you can download and use the [Prettier Extension](https://prettier.io/) to re-format the documents.
