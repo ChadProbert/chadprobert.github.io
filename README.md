@@ -28,6 +28,10 @@
 
 </div>
 
+## SEO Score
+<img src="images/lighthouse-SEO-report.png" alt="A picture of an SEO test done using Lighthouse" width="1100">
+
+
 ## Getting Started
 
 To get a local copy up and running follow these steps:
