@@ -2,8 +2,11 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<meta
+			name="description"
+			content="Explore the portfolio of Chad Probert, an experienced full stackweb developer and software engineer with skills in React, Node.js, andmore."
+		/>
 		<!-- tab icon and title -->
 		<link
 			rel="icon"
@@ -12,18 +15,17 @@
 			class="tabIcon"
 		/>
 		<title>Chad Probert | Projects</title>
-
 		<!-- Iconify -->
-		<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-
+		<script
+			src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"
+			defer
+		></script>
 		<!-- Bootstrap -->
 		<link
 			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-			crossorigin="anonymous"
+			rel="preload"
+      as="style" onload="this.onload=null;this.rel='stylesheet'"
 		/>
-
 		<!-- Font Awesome 5 -->
 		<link
 			rel="stylesheet"
@@ -32,12 +34,11 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-
 		<!-- custom CSS files -->
-		<link rel="stylesheet" href="./css/projects/projects.css" />
-		<link rel="stylesheet" href="./css/projects/features/animations.css" />
-		<link rel="stylesheet" href="./css/projects/features/dark-mode.css" />
-		<link rel="stylesheet" href="./css/projects/features/mobile.css" />
+		<link rel="stylesheet" href="./css/projects/projects.min.css" />
+		<link rel="stylesheet" href="./css/projects/features/animations.min.css" />
+		<link rel="stylesheet" href="./css/projects/features/dark-mode.min.css" />
+		<link rel="stylesheet" href="./css/projects/features/mobile.min.css" />
 	</head>
 	<body>
 		<div class="con">
@@ -45,75 +46,68 @@
 			<input type="checkbox" id="dark-mode-toggle" />
 			<label for="dark-mode-toggle" id="dark-mode-label" class="dark-mode-label"
 				>Dark Mode</label
-			>
-
-			<!-- header -->
+			><!-- header -->
 			<h1>Chad Probert</h1>
 			<h3 class="roleHeading">Full Stack Web Developer & Software Engineer</h3>
-
 			<!-- social icons -->
 			<ul class="socialIcons">
 				<li class="githubIcon socialIcon">
 					<a
 						href="https://github.com/ChadProbert"
 						target="_blank"
+						rel="noopener noreferrer"
 						class="githubIcon"
-					>
-						<iconify-icon icon="jam:github"></iconify-icon>
-					</a>
+						><iconify-icon icon="jam:github"></iconify-icon
+					></a>
 				</li>
 				<li class="whatsappIcon socialIcon">
 					<a
 						href="https://wa.me/+27609849667"
 						target="_blank"
+						rel="noopener noreferrer"
 						class="whatsappIcon"
-					>
-						<iconify-icon icon="uim:whatsapp"></iconify-icon>
-					</a>
+						><iconify-icon icon="uim:whatsapp"></iconify-icon
+					></a>
 				</li>
 				<li class="linkedinIcon socialIcon">
 					<a
 						href="https://www.linkedin.com/in/chad-probert-6421b321b/"
 						target="_blank"
+						rel="noopener noreferrer"
 						class="linkedinIcon"
-					>
-						<iconify-icon icon="uil:linkedin"></iconify-icon>
-					</a>
+						><iconify-icon icon="uil:linkedin"></iconify-icon
+					></a>
 				</li>
 			</ul>
-
 			<!-- avatar image -->
 			<img
 				src="./images/me3.jpg"
-				alt="Avatar of me"
+				alt="Chad Probert's portfolio picture"
 				width="150"
 				height="150"
 				class="avatar"
-			/>
-
-			<!-- navigation bar -->
+			/><!-- navigation bar -->
 			<div class="row navWrapper">
 				<nav>
 					<ul class="routes">
 						<li class="navItem">
-							<a href="./index.html" class="navLink"
+							<a href="./index.min.html" class="navLink"
 								><i class="fa-solid fa-person-rays"></i> ABOUT ME</a
 							>
 						</li>
 						<li class="navItem">
-							<a href="./projects.html" class="navLink"
-								><i class="fa-solid fa-folder fa-flip"></i> PROJECTS
-							</a>
+							<a href="./projects.min.html" class="navLink"
+								><i class="fa-solid fa-folder fa-flip"></i> PROJECTS</a
+							>
 						</li>
 						<li class="navItem">
-							<a href="./contact.html" class="navLink"
+							<a href="./contact.min.html" class="navLink"
 								><i class="fa-solid fa-address-book"></i> CONTACT ME</a
 							>
 						</li>
 					</ul>
 				</nav>
 			</div>
-
 			<div class="con">
 				<h2 class="projectsHeading">Projects</h2>
 				<!-- row 1 -->
@@ -122,13 +116,12 @@
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
 							<!-- target=_blank makes the link open up on a new page  -->
-							<a href="./images/appointments-project.png" target="_blank">
-								<img
+							<a href="./images/appointments-project.png" target="_blank"
+								><img
 									src="./images/appointments-project.png"
 									class="card-img-top"
-									alt="appointments app image"
-								/>
-							</a>
+									alt="Appointments app image"
+							/></a>
 							<div class="card-body">
 								<h5 class="card-title">Appointment App</h5>
 								<p class="card-text">
@@ -138,53 +131,49 @@
 									appointments, create a new appointment, edit an existing
 									appointment and delete an appointment.
 								</p>
-
 								<iconify-icon
 									class="stackIcon"
 									icon="skill-icons:mongodb"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:react-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="logos:nodejs-icon-alt"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:expressjs-light"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:bootstrap"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/dr-smith-medical-centre-app"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
-
 					<!-- project 2 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/todo.png" target="_blank">
-								<img
+							<a href="./images/todo.png" target="_blank"
+								><img
 									src="./images/todo.png"
 									class="card-img-top"
-									alt="to-do app image"
-								/>
-							</a>
+									alt="To-do app image"
+							/></a>
 							<div class="card-body">
 								<h5 class="card-title">To-Do List App</h5>
 								<p class="card-text">
@@ -192,53 +181,49 @@
 									to-do list, add items to their list of to-dos, edit items on
 									the list and delete items from the list.
 								</p>
-
 								<iconify-icon
 									class="stackIcon"
 									icon="skill-icons:mongodb"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:react-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="logos:nodejs-icon-alt"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:expressjs-light"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:bootstrap"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/quickr-to-do-list"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
-
 					<!-- project 3 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/media-search.png" target="_blank">
-								<img
+							<a href="./images/media-search.png" target="_blank"
+								><img
 									src="./images/media-search.png"
 									class="card-img-top"
-									alt="media search app image"
-								/>
-							</a>
+									alt="Media search app image"
+							/></a>
 							<div class="card-body">
 								<h5 class="card-title">Media Search App</h5>
 								<p class="card-text">
@@ -250,47 +235,45 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="skill-icons:react-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="logos:nodejs-icon-alt"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:expressjs-light"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:bootstrap"
-								></iconify-icon>
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/media-search"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
 				</div>
-
 				<!-- row 2 -->
 				<div class="row">
 					<!-- project 4 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/cars-db.png" target="_blank">
-								<img
+							<a href="./images/cars-db.png" target="_blank"
+								><img
 									src="./images/cars-db.png"
 									class="card-img-top"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Car database app image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Car Database App</h5>
 								<p class="card-text">
@@ -301,48 +284,46 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="skill-icons:mongodb"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:react-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="logos:nodejs-icon-alt"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:expressjs-light"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:bootstrap"
-								></iconify-icon>
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/database-handler"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
-
 					<!-- project 5 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/minesweeper.png" target="_blank">
-								<img
+							<a href="./images/minesweeper.png" target="_blank"
+								><img
 									src="./images/minesweeper.png"
 									class="card-img-top"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Minesweeper app image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Minesweeper Game</h5>
 								<p class="card-text">
@@ -351,37 +332,34 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="skill-icons:react-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:bootstrap"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/minesweeper-react-app"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
-
 					<!-- project 6 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/weather.png" target="_blank">
-								<img
+							<a href="./images/weather.png" target="_blank"
+								><img
 									src="./images/weather.png"
 									class="card-img-top"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Weather app image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Weather App</h5>
 								<p class="card-text">
@@ -391,39 +369,37 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="skill-icons:react-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:bootstrap"
-								></iconify-icon>
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/weather-app-react"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
 				</div>
-
 				<!-- row 3 -->
 				<div class="row">
 					<!-- project 7 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/4.png" target="_blank">
-								<img
+							<a href="./images/4.png" target="_blank"
+								><img
 									src="./images/4.png"
 									class="card-img-top"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Star Wars Encyclopedia app image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Star Wars Encyclopedia App</h5>
 								<p class="card-text">
@@ -434,33 +410,30 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="teenyicons:nextjs-solid"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:materialui-dark"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/star-wars-encyclopedia"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
-
 					<!-- project 8 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/19.png" target="_blank">
-								<img
+							<a href="./images/19.png" target="_blank"
+								><img
 									src="./images/19.png"
 									class="card-img-top code-img"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Bookstore database code image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Bookstore Database Program</h5>
 								<p class="card-text">
@@ -470,33 +443,30 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="logos:python"
-								></iconify-icon>
-								<iconify-icon
+								></iconify-icon
+								><iconify-icon
 									class="stackIcon"
 									icon="skill-icons:sqlite"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/bookstore-SQLite"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
-
 					<!-- project 9 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/17.png" target="_blank">
-								<img
+							<a href="./images/17.png" target="_blank"
+								><img
 									src="./images/17.png"
 									class="card-img-top code-img"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Task Manager code image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Task Manager Program</h5>
 								<p class="card-text">
@@ -506,32 +476,29 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="logos:python"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/task-manager-program"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
 						</div>
 					</div>
 				</div>
-
 				<!-- row 4 -->
 				<div class="row">
 					<!-- project 10 -->
 					<div class="col-md-4 fade-in">
 						<div class="card shadow mx-auto" style="width: 30rem">
-							<a href="./images/16.png" target="_blank">
-								<img
+							<a href="./images/16.png" target="_blank"
+								><img
 									src="./images/16.png"
 									class="card-img-top code-img"
-									alt="car database app image"
-								/>
-							</a>
+									alt="Shoe Inventory code image"
+							/></a>
 							<div class="card-body" style="text-align: left">
 								<h5 class="card-title">Shoe Shop Inventory Program</h5>
 								<p class="card-text">
@@ -541,13 +508,12 @@
 								<iconify-icon
 									class="stackIcon"
 									icon="logos:python"
-								></iconify-icon>
-
-								<br />
-								<a
+								></iconify-icon
+								><br /><a
 									href="https://github.com/ChadProbert/shoe-shop-inventory"
 									class="btn btn-primary repoLink"
 									target="_blank"
+									rel="noopener noreferrer"
 									><i class="fa-brands fa-github repoIcon"></i>Repository</a
 								>
 							</div>
@@ -560,7 +526,6 @@
 		<script src="./js/on-scroll-fade.js"></script>
 	</body>
 </html>
-
 <!--
 references:
 https://getbootstrap.com/
