@@ -4,10 +4,8 @@
 <div align="center">
     <img src="images/cp-logo.png" alt="Logo" width="80" height="80">
 
-  ### My Developer Portfolio
+  ### My Developer Portfolio (Inactive)
   <p>
-    <a href="https://chadprobert.github.io/">View Portfolio</a>
-    ·
     <a href="https://github.com/ChadProbert/chadprobert.github.io/issues">Report Bug</a>
     ·
     <a href="https://github.com/ChadProbert/chadprobert.github.io/pulls">Request Feature</a>
